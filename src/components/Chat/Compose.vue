@@ -21,8 +21,7 @@ const emit = defineEmits(["send"]);
  * Sends a text message.
  */
 function send() {
-  emit("send",text.value)
-  
+  emit("send",text.value,"text")
   text.value=""
   // Hint: Call 'emit' with the correct arguments.
   //       Finally, clear the text input.
